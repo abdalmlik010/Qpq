@@ -62,15 +62,15 @@ div.header {
 }
 
 div.navbar {
-    background-color: #2e6da4;
-    text-align: right;
+    background-color: #112233;
+    text-align: center;
 }
 
 div.navbar a {
-    background-color: #5ba3d9;
-    color: #ffffff;
+    background-color: #c9a84c;
+    color: #0a1520;
     font-family: "Georgia", serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
 }
