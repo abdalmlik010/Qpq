@@ -50,12 +50,11 @@ a {
     font-family: "Georgia", serif;
     font-size: 14px;
     font-weight: bold;
-    background-color: #1a3a5c;
-    color: #ffffff;
+    color: #1a3a5c;
+    background-color: #a8d0f0;
     text-align: center;
     text-decoration: none;
 }
-
 div.header {
     background-color: #1a3a5c;
     text-align: center;
