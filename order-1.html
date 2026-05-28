@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>كالوري لاب - تجهيز طلبك</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body dir="rtl">
+
+<div class="header">
+<h1>&#127807; كالوري لاب | Calorie Lab &#127807;</h1>
+<h6>صحتك تبدأ من طبقك - الطائف</h6>
+</div>
+
+<div class="navbar">
+<a href="index.html">بوابتنا</a>
+<a href="about.html">قصتنا</a>
+<a href="menu.html">أطباقنا</a>
+<a href="order.html">تجهيز طلبك</a>
+<a href="check.html">تأكيد بياناتك</a>
+<a href="calc.html">الفاتورة الفورية</a>
+<a href="branches.html">أين تجدنا</a>
+</div>
+
+<div class="content">
+
+<h2>&#128230; تجهيز طلب التوصيل</h2>
+
+<div class="box-light">
+<p>&#128338; متوسط وقت التوصيل: 30 إلى 45 دقيقة داخل أحياء الطائف.</p>
+<p>&#128222; خدمة التوصيل متاحة من 7 صباحاً حتى 11 مساءً.</p>
+</div>
+
+<div class="box-white">
+
+<form>
+
+<h3>&#128100; بيانات العميل</h3>
+
+<p>
+<span class="label-blue">الاسم: </span>
+<br>
+<input type="text" name="customer_name" size="40">
+</p>
+
+<p>
+<span class="label-blue">كلمة المرور: </span>
+<br>
+<input type="password" name="customer_password" size="40">
+</p>
+
+<p>
+<span class="label-blue">رقم الجوال: </span>
+<br>
+<input type="text" name="customer_phone" size="40">
+</p>
+
+<h3>&#128205; بيانات التوصيل - الطائف فقط</h3>
+
+<p>
+<span class="label-blue">اختر حي التوصيل: </span>
+<br>
+<select name="delivery_area">
+<option value="">-- اختر الحي --</option>
+<option value="shahar">حي شهار</option>
+<option value="hawiya">حي الحوية</option>
+<option value="sidad">حي السداد</option>
+<option value="qurwa">حي قروى</option>
+</select>
+</p>
+
+<p>
+<span class="label-blue">تفاصيل العنوان: </span>
+<br>
+<textarea name="address_details" rows="4" cols="45">اكتب هنا اسم الشارع ورقم المنزل وأي تفاصيل تساعد على الوصول...</textarea>
+</p>
+
+<h3>&#127859; اختيار الوجبات</h3>
+
+<p>
+<span class="label-blue">الوجبة الرئيسية: </span>
+<br>
+<select name="main_meal">
+<option value="">-- اختر الوجبة --</option>
+<option value="chicken">Grilled Chicken Fit Plate - 33 ريال</option>
+<option value="salmon">Salmon Power Plate - 46 ريال</option>
+<option value="beef">Beef Balance Plate - 39 ريال</option>
+<option value="wrap">Chicken Wrap Light - 26 ريال</option>
+<option value="quinoa">Quinoa Bowl - 23 ريال</option>
+<option value="protein_salad">Protein Salad Bowl - 29 ريال</option>
+</select>
+</p>
+
+<p>
+<span class="label-blue">السلطة: </span>
+<br>
+<select name="starter">
+<option value="">-- اختر السلطة --</option>
+<option value="caesar">Caesar Fit Bowl - 27 ريال</option>
+<option value="greek">Greek Bowl - 25 ريال</option>
+<option value="tuna">Tuna Protein Salad - 26 ريال</option>
+<option value="no">بدون سلطة</option>
+</select>
+</p>
+
+<p>
+<span class="label-blue">المشروب: </span>
+<br>
+<select name="drink">
+<option value="">-- اختر المشروب --</option>
+<option value="green">Green Detox - 18 ريال</option>
+<option value="berry">Berry Boost - 19 ريال</option>
+<option value="citrus">Citrus Fresh - 15 ريال</option>
+<option value="no">بدون مشروب</option>
+</select>
+</p>
+
+<p>
+<span class="label-blue">ملاحظات خاصة (حساسية - تعديل مكونات): </span>
+<br>
+<textarea name="special_notes" rows="3" cols="45">مثال: بدون صوص، زيادة بروتين، حساسية من المكسرات...</textarea>
+</p>
+
+<h3>&#128179; طريقة الدفع</h3>
+
+<p>
+<select name="payment_method">
+<option value="">-- اختر طريقة الدفع --</option>
+<option value="cash">الدفع نقداً عند الاستلام</option>
+<option value="stc">STC Pay</option>
+<option value="apple">Apple Pay</option>
+<option value="mada">بطاقة مدى</option>
+</select>
+</p>
+
+<p>
+<input type="submit" value="إرسال الطلب">
+</p>
+
+</form>
+
+</div>
+
+<h2>&#128204; تعليمات قبل إرسال الطلب</h2>
+<div class="box-light">
+<ul>
+<li>يمكن تعديل المكونات حسب الطلب (بدون صوص / زيادة بروتين).</li>
+<li>الرجاء كتابة أي حساسية غذائية قبل تأكيد الطلب.</li>
+<li>تأكد من صحة الموقع قبل تأكيد الطلب.</li>
+<li>تأكد من صحة رقم الجوال لضمان وصول الطلب بدون تأخير.</li>
+<li>الطلب يتم تحضيره طازجاً لذلك لا يمكن الإلغاء بعد البدء.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+<p>&#169; 2025 كالوري لاب | Calorie Lab - جميع الحقوق محفوظة - الطائف، المملكة العربية السعودية</p>
+</div>
+
+</body>
+</html>

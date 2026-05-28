@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>كالوري لاب - تأكيد بياناتك</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body dir="rtl">
+
+<div class="header">
+<h1>&#127807; كالوري لاب | Calorie Lab &#127807;</h1>
+<h6>صحتك تبدأ من طبقك - الطائف</h6>
+</div>
+
+<div class="navbar">
+<a href="index.html">بوابتنا</a>
+<a href="about.html">قصتنا</a>
+<a href="menu.html">أطباقنا</a>
+<a href="order.html">تجهيز طلبك</a>
+<a href="check.html">تأكيد بياناتك</a>
+<a href="calc.html">الفاتورة الفورية</a>
+<a href="branches.html">أين تجدنا</a>
+</div>
+
+<div class="content">
+
+<h2>&#10003; تأكيد بيانات الطلب</h2>
+<p>أدخل بياناتك للتحقق من استلام طلبك بشكل صحيح.</p>
+
+<div class="box-white">
+<h3>&#128269; التحقق من رقم الطلب</h3>
+<p>أدخل رقم الطلب الذي وصلك عبر رسالة الجوال:</p>
+<p>
+<span class="label-blue">رقم الطلب: </span>
+<input type="text" id="order_number" size="30">
+</p>
+<p>
+<input type="button" value="تحقق من رقم الطلب" onclick="checkOrderNumber()">
+</p>
+</div>
+
+<div class="box-light">
+<h3>&#128100; التحقق من الاسم</h3>
+<p>أدخل اسمك كما سجلته في نموذج الطلب:</p>
+<p>
+<span class="label-blue">الاسم: </span>
+<input type="text" id="customer_name_check" size="30">
+</p>
+<p>
+<input type="button" value="تحقق من الاسم" onclick="checkCustomerName()">
+</p>
+</div>
+
+<div class="box-white">
+<h3>&#128222; التحقق من رقم الجوال</h3>
+<p>أدخل رقم جوالك للتأكد من تسجيل بياناتك بشكل صحيح:</p>
+<p>
+<span class="label-blue">رقم الجوال: </span>
+<input type="text" id="phone_check" size="30">
+</p>
+<p>
+<input type="button" value="تحقق من رقم الجوال" onclick="checkPhoneNumber()">
+</p>
+</div>
+
+<div class="box-light">
+<h3>&#128204; ملاحظات</h3>
+<ul>
+<li>في حال عدم استلامك رقم الطلب تواصل مع خدمة العملاء.</li>
+<li>أوقات التوصيل تتراوح بين 30 و45 دقيقة داخل أحياء الطائف.</li>
+<li>الطلب يتم تحضيره طازجاً ولا يمكن إلغاؤه بعد البدء بالتحضير.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+<p>&#169; 2025 كالوري لاب | Calorie Lab - جميع الحقوق محفوظة - الطائف، المملكة العربية السعودية</p>
+</div>
+
+<script type="text/javascript">
+
+function checkOrderNumber() {
+    var orderNumber = document.getElementById("order_number").value;
+    if (orderNumber == "") {
+        window.alert("تنبيه: حقل رقم الطلب فارغ! يرجى إدخال رقم طلبك قبل التحقق. يمكنك إيجاد الرقم في رسالة الجوال التي وصلتك بعد إتمام الطلب.");
+    } else {
+        window.alert("تم استلام رقم الطلب: " + orderNumber + " - سيتم التحقق من بياناتك ومتابعة طلبك في أقرب وقت.");
+    }
+}
+
+function checkCustomerName() {
+    var customerName = document.getElementById("customer_name_check").value;
+    if (customerName == "") {
+        window.alert("تنبيه: حقل الاسم فارغ! يرجى إدخال اسمك كما سجلته في نموذج الطلب.");
+    } else {
+        window.alert("مرحباً " + customerName + " - تم التعرف على بياناتك في نظامنا بنجاح. شكراً لاختيارك كالوري لاب.");
+    }
+}
+
+function checkPhoneNumber() {
+    var phoneNumber = document.getElementById("phone_check").value;
+    if (phoneNumber == "") {
+        window.alert("تنبيه: حقل رقم الجوال فارغ! يرجى إدخال رقم جوالك الذي سجلته عند الطلب.");
+    } else {
+        var firstDigit = phoneNumber.charAt(0);
+        if (firstDigit == "0") {
+            window.alert("تم التحقق من رقم الجوال: " + phoneNumber + " - البيانات مطابقة. ستتلقى رسالة تأكيد على هذا الرقم قريباً.");
+        } else {
+            window.alert("تنبيه: رقم الجوال لا يبدأ بصفر. يرجى إدخال رقم الجوال السعودي بشكل صحيح (مثال: 05XXXXXXXX).");
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>

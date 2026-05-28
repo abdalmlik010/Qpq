@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>كالوري لاب - الفاتورة الفورية</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body dir="rtl">
+
+<div class="header">
+<h1>&#127807; كالوري لاب | Calorie Lab &#127807;</h1>
+<h6>صحتك تبدأ من طبقك - الطائف</h6>
+</div>
+
+<div class="navbar">
+<a href="index.html">بوابتنا</a>
+<a href="about.html">قصتنا</a>
+<a href="menu.html">أطباقنا</a>
+<a href="order.html">تجهيز طلبك</a>
+<a href="check.html">تأكيد بياناتك</a>
+<a href="calc.html">الفاتورة الفورية</a>
+<a href="branches.html">أين تجدنا</a>
+</div>
+
+<div class="content">
+
+<h2>&#128179; الفاتورة الفورية</h2>
+<p>تفاصيل أسعار الوجبات وتكاليف التوصيل لأحياء الطائف مع احتساب الإجمالي مباشرة.</p>
+
+<script type="text/javascript">
+
+var price_chicken = 33;
+var price_salmon = 46;
+var price_beef = 39;
+var price_wrap = 26;
+var price_quinoa = 23;
+var price_protein_salad = 29;
+
+var price_caesar = 27;
+var price_greek = 25;
+var price_tuna = 26;
+
+var price_green_detox = 18;
+var price_berry_boost = 19;
+var price_citrus = 15;
+
+var delivery_shahar = 10;
+var delivery_hawiya = 12;
+var delivery_sidad = 15;
+var delivery_qurwa = 18;
+
+document.write("<h3>&#127829; أسعار الوجبات الرئيسية</h3>");
+document.write("<table width='85%'>");
+document.write("<tr><th>الوجبة</th><th>السعر</th></tr>");
+document.write("<tr><td class='blue-dark'>Grilled Chicken Fit Plate</td><td class='blue-light'>" + price_chicken + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Salmon Power Plate</td><td class='blue-light'>" + price_salmon + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Beef Balance Plate</td><td class='blue-light'>" + price_beef + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Chicken Wrap Light</td><td class='blue-light'>" + price_wrap + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Quinoa Bowl</td><td class='blue-light'>" + price_quinoa + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Protein Salad Bowl</td><td class='blue-light'>" + price_protein_salad + " ريال</td></tr>");
+document.write("</table>");
+
+document.write("<h3>&#127795; أسعار السلطات</h3>");
+document.write("<table width='85%'>");
+document.write("<tr><th>السلطة</th><th>السعر</th></tr>");
+document.write("<tr><td class='blue-dark'>Caesar Fit Bowl</td><td class='blue-light'>" + price_caesar + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Greek Bowl</td><td class='blue-light'>" + price_greek + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Tuna Protein Salad</td><td class='blue-light'>" + price_tuna + " ريال</td></tr>");
+document.write("</table>");
+
+document.write("<h3>&#127862; أسعار المشروبات</h3>");
+document.write("<table width='85%'>");
+document.write("<tr><th>المشروب</th><th>السعر</th></tr>");
+document.write("<tr><td class='blue-dark'>Green Detox</td><td class='blue-light'>" + price_green_detox + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Berry Boost</td><td class='blue-light'>" + price_berry_boost + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>Citrus Fresh</td><td class='blue-light'>" + price_citrus + " ريال</td></tr>");
+document.write("</table>");
+
+document.write("<h3>&#128205; رسوم التوصيل حسب الحي</h3>");
+document.write("<table width='85%'>");
+document.write("<tr><th>الحي</th><th>رسوم التوصيل</th></tr>");
+document.write("<tr><td class='blue-mid'>حي شهار</td><td class='white-row'>" + delivery_shahar + " ريال</td></tr>");
+document.write("<tr><td class='blue-mid'>حي الحوية</td><td class='white-row'>" + delivery_hawiya + " ريال</td></tr>");
+document.write("<tr><td class='blue-mid'>حي السداد</td><td class='white-row'>" + delivery_sidad + " ريال</td></tr>");
+document.write("<tr><td class='blue-mid'>حي قروى</td><td class='white-row'>" + delivery_qurwa + " ريال</td></tr>");
+document.write("</table>");
+
+document.write("<h3>&#128202; أمثلة على احتساب الفاتورة</h3>");
+
+var ex1_meal = price_chicken;
+var ex1_salad = price_caesar;
+var ex1_drink = price_green_detox;
+var ex1_delivery = delivery_shahar;
+var ex1_total = ex1_meal + ex1_salad + ex1_drink + ex1_delivery;
+
+document.write("<table width='85%'>");
+document.write("<tr><th colspan='2'>مثال 1 - عميل من حي شهار</th></tr>");
+document.write("<tr><td class='blue-light'>Grilled Chicken Fit Plate</td><td class='white-row'>" + ex1_meal + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Caesar Fit Bowl</td><td class='white-row'>" + ex1_salad + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Green Detox</td><td class='white-row'>" + ex1_drink + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>رسوم توصيل حي شهار</td><td class='white-row'>" + ex1_delivery + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>الإجمالي</td><td class='blue-dark'>" + ex1_total + " ريال</td></tr>");
+document.write("</table>");
+
+var ex2_meal = price_salmon;
+var ex2_salad = price_greek;
+var ex2_drink = price_berry_boost;
+var ex2_delivery = delivery_sidad;
+var ex2_total = ex2_meal + ex2_salad + ex2_drink + ex2_delivery;
+
+document.write("<table width='85%'>");
+document.write("<tr><th colspan='2'>مثال 2 - عميل من حي السداد</th></tr>");
+document.write("<tr><td class='blue-light'>Salmon Power Plate</td><td class='white-row'>" + ex2_meal + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Greek Bowl</td><td class='white-row'>" + ex2_salad + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Berry Boost</td><td class='white-row'>" + ex2_drink + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>رسوم توصيل حي السداد</td><td class='white-row'>" + ex2_delivery + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>الإجمالي</td><td class='blue-dark'>" + ex2_total + " ريال</td></tr>");
+document.write("</table>");
+
+var ex3_meal = price_wrap;
+var ex3_salad = price_tuna;
+var ex3_drink = price_citrus;
+var ex3_delivery = delivery_qurwa;
+var ex3_total = ex3_meal + ex3_salad + ex3_drink + ex3_delivery;
+
+document.write("<table width='85%'>");
+document.write("<tr><th colspan='2'>مثال 3 - عميل من حي قروى</th></tr>");
+document.write("<tr><td class='blue-light'>Chicken Wrap Light</td><td class='white-row'>" + ex3_meal + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Tuna Protein Salad</td><td class='white-row'>" + ex3_salad + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>Citrus Fresh</td><td class='white-row'>" + ex3_drink + " ريال</td></tr>");
+document.write("<tr><td class='blue-light'>رسوم توصيل حي قروى</td><td class='white-row'>" + ex3_delivery + " ريال</td></tr>");
+document.write("<tr><td class='blue-dark'>الإجمالي</td><td class='blue-dark'>" + ex3_total + " ريال</td></tr>");
+document.write("</table>");
+
+document.write("<p>لتجهيز طلبك توجه لصفحة <a href='order.html'>تجهيز طلبك</a>.</p>");
+
+</script>
+
+</div>
+
+<div class="footer">
+<p>&#169; 2025 كالوري لاب | Calorie Lab - جميع الحقوق محفوظة - الطائف، المملكة العربية السعودية</p>
+</div>
+
+</body>
+</html>

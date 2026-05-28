@@ -1,0 +1,235 @@
+body {
+    background-color: #f0f4f8;
+    font-family: "Georgia", serif;
+    color: #1a2940;
+    text-align: right;
+}
+
+h1 {
+    font-family: "Georgia", serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1a3a5c;
+}
+
+h2 {
+    font-family: "Georgia", serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a3a5c;
+    text-align: right;
+}
+
+h3 {
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e6da4;
+    text-align: right;
+}
+
+h6 {
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #c8dff0;
+    text-align: center;
+    background-color: #1a3a5c;
+}
+
+p {
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    color: #2c3e50;
+    text-align: right;
+}
+
+a {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a3a5c;
+    background-color: #a8d0f0;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.header {
+    background-color: #1a3a5c;
+    text-align: center;
+}
+
+div.navbar {
+    background-color: #2e6da4;
+    text-align: right;
+}
+
+div.navbar a {
+    background-color: #5ba3d9;
+    color: #ffffff;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.navbar a:hover {
+    background-color: #3a8abf;
+}
+
+div.content {
+    background-color: #f0f4f8;
+    text-align: right;
+}
+
+div.footer {
+    background-color: #1a3a5c;
+    text-align: center;
+}
+
+div.footer p {
+    color: #a8d0f0;
+    font-size: 13px;
+    text-align: center;
+}
+
+table {
+    background-color: #dceefa;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    text-align: right;
+}
+
+th {
+    background-color: #2e6da4;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+td {
+    color: #1a2940;
+    text-align: center;
+    background-color: #eaf4fc;
+}
+
+td.blue-dark {
+    background-color: #2e6da4;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td.blue-mid {
+    background-color: #5ba3d9;
+    color: #ffffff;
+}
+
+td.blue-light {
+    background-color: #c5e3f7;
+    color: #1a2940;
+}
+
+td.white-row {
+    background-color: #f7fbff;
+    color: #1a2940;
+}
+
+ul {
+    text-align: right;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+ol {
+    text-align: right;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+li {
+    color: #2c3e50;
+    font-size: 15px;
+    font-family: "Georgia", serif;
+}
+
+form {
+    background-color: #dceefa;
+    text-align: right;
+}
+
+input {
+    background-color: #ffffff;
+    color: #1a2940;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+select {
+    background-color: #ffffff;
+    color: #1a2940;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+option {
+    background-color: #eaf4fc;
+    color: #1a2940;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+textarea {
+    background-color: #ffffff;
+    color: #1a2940;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+span.label-blue {
+    color: #1a3a5c;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Georgia", serif;
+}
+
+span.label-light {
+    color: #2e6da4;
+    font-size: 14px;
+    font-family: "Georgia", serif;
+}
+
+div.box-light {
+    background-color: #dceefa;
+    text-align: right;
+}
+
+div.box-white {
+    background-color: #ffffff;
+    text-align: right;
+}
+
+div.box-mid {
+    background-color: #c5e3f7;
+    text-align: right;
+}
+
+div.branch-box {
+    background-color: #dceefa;
+    text-align: right;
+}
+
+div.branch-box h3 {
+    color: #1a3a5c;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+div.branch-box p {
+    color: #2c3e50;
+    font-size: 14px;
+}

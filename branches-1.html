@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>كالوري لاب - أين تجدنا</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body dir="rtl">
+
+<div class="header">
+<h1>&#127807; كالوري لاب | Calorie Lab &#127807;</h1>
+<h6>صحتك تبدأ من طبقك - الطائف</h6>
+</div>
+
+<div class="navbar">
+<a href="index.html">بوابتنا</a>
+<a href="about.html">قصتنا</a>
+<a href="menu.html">أطباقنا</a>
+<a href="order.html">تجهيز طلبك</a>
+<a href="check.html">تأكيد بياناتك</a>
+<a href="calc.html">الفاتورة الفورية</a>
+<a href="branches.html">أين تجدنا</a>
+</div>
+
+<div class="content">
+
+<h2>&#128205; فروعنا في أحياء الطائف</h2>
+<p>نخدمك في أربعة فروع في مدينة الطائف. اختر أقرب فرع أو اطلب التوصيل المنزلي.</p>
+
+<div class="box-light">
+<p>&#9200; أوقات العمل في جميع الفروع: من 7 صباحاً حتى 11 مساءً - سبعة أيام في الأسبوع.</p>
+<p>&#128222; الرقم الموحد: 920-CALLAB</p>
+</div>
+
+<script type="text/javascript">
+
+var branch_names = new Array(4);
+branch_names[0] = "فرع حي شهار";
+branch_names[1] = "فرع حي الحوية";
+branch_names[2] = "فرع حي السداد";
+branch_names[3] = "فرع حي قروى";
+
+var branch_addresses = new Array(4);
+branch_addresses[0] = "شارع الأمير سلطان، حي شهار، الطائف";
+branch_addresses[1] = "شارع الحوية الرئيسي، بالقرب من منتزه الحوية، الطائف";
+branch_addresses[2] = "طريق السداد، مقابل مجمع السداد التجاري، الطائف";
+branch_addresses[3] = "شارع الوادي الأخضر، حي قروى، الطائف";
+
+var branch_phones = new Array(4);
+branch_phones[0] = "0127-110001";
+branch_phones[1] = "0127-110002";
+branch_phones[2] = "0127-110003";
+branch_phones[3] = "0127-110004";
+
+var branch_managers = new Array(4);
+branch_managers[0] = "أحمد الشهراني";
+branch_managers[1] = "محمد الغامدي";
+branch_managers[2] = "سعد الزهراني";
+branch_managers[3] = "فهد القحطاني";
+
+var branch_delivery = new Array(4);
+branch_delivery[0] = 10;
+branch_delivery[1] = 12;
+branch_delivery[2] = 15;
+branch_delivery[3] = 18;
+
+var branch_year = new Array(4);
+branch_year[0] = 2022;
+branch_year[1] = 2023;
+branch_year[2] = 2023;
+branch_year[3] = 2024;
+
+document.write("<h3>&#127968; قائمة الفروع</h3>");
+document.write("<table width='95%'>");
+document.write("<tr>");
+document.write("<th>الفرع</th>");
+document.write("<th>العنوان</th>");
+document.write("<th>الهاتف</th>");
+document.write("<th>المدير</th>");
+document.write("<th>رسوم التوصيل</th>");
+document.write("<th>سنة الافتتاح</th>");
+document.write("</tr>");
+
+for (var i = 0; i < 4; i++) {
+    document.write("<tr>");
+    document.write("<td class='blue-dark'>" + branch_names[i] + "</td>");
+    document.write("<td class='blue-light'>" + branch_addresses[i] + "</td>");
+    document.write("<td class='white-row'>" + branch_phones[i] + "</td>");
+    document.write("<td class='blue-mid'>" + branch_managers[i] + "</td>");
+    document.write("<td class='blue-dark'>" + branch_delivery[i] + " ريال</td>");
+    document.write("<td class='white-row'>" + branch_year[i] + "</td>");
+    document.write("</tr>");
+}
+
+document.write("</table>");
+
+document.write("<h3>&#128270; تفاصيل كل فرع</h3>");
+
+for (var j = 0; j < 4; j++) {
+    document.write("<div class='branch-box'>");
+    document.write("<h3>" + branch_names[j] + "</h3>");
+    document.write("<p><span class='label-blue'>العنوان: </span>" + branch_addresses[j] + "</p>");
+    document.write("<p><span class='label-blue'>الهاتف: </span>" + branch_phones[j] + "</p>");
+    document.write("<p><span class='label-blue'>المدير: </span>" + branch_managers[j] + "</p>");
+    document.write("<p><span class='label-blue'>رسوم التوصيل: </span>" + branch_delivery[j] + " ريال</p>");
+    document.write("<p><span class='label-blue'>سنة الافتتاح: </span>" + branch_year[j] + "</p>");
+    document.write("</div>");
+}
+
+</script>
+
+<div class="box-light">
+<h3>&#128204; معلومات مهمة</h3>
+<ul>
+<li>جميع الفروع توفر خدمة الاستلام الذاتي أو التوصيل المنزلي.</li>
+<li>متوفر موقف سيارات مجاني بجانب جميع الفروع.</li>
+<li>نقبل الطلبات المسبقة للمناسبات والتجمعات.</li>
+<li>جميع الفروع مجهزة بمقاعد مريحة لتناول الطعام داخل المطعم.</li>
+</ul>
+</div>
+
+<h2>&#128338; أوقات الذروة وتوقعات التوصيل</h2>
+
+<table width="85%">
+<tr>
+<th>وقت الطلب</th>
+<th>حالة الازدحام</th>
+<th>الوقت المتوقع للتوصيل</th>
+</tr>
+<tr>
+<td class="blue-light">7:00 - 10:00 صباحاً</td>
+<td class="white-row">هادئ</td>
+<td class="blue-mid">20 - 25 دقيقة</td>
+</tr>
+<tr>
+<td class="blue-light">12:00 - 2:00 ظهراً</td>
+<td class="white-row">مزدحم</td>
+<td class="blue-mid">40 - 50 دقيقة</td>
+</tr>
+<tr>
+<td class="blue-light">3:00 - 5:00 عصراً</td>
+<td class="white-row">هادئ</td>
+<td class="blue-mid">25 - 30 دقيقة</td>
+</tr>
+<tr>
+<td class="blue-light">7:00 - 9:00 مساءً</td>
+<td class="white-row">مزدحم جداً</td>
+<td class="blue-mid">45 - 60 دقيقة</td>
+</tr>
+<tr>
+<td class="blue-light">9:00 - 11:00 مساءً</td>
+<td class="white-row">هادئ</td>
+<td class="blue-mid">20 - 30 دقيقة</td>
+</tr>
+</table>
+
+</div>
+
+<div class="footer">
+<p>&#169; 2025 كالوري لاب | Calorie Lab - جميع الحقوق محفوظة - الطائف، المملكة العربية السعودية</p>
+</div>
+
+</body>
+</html>
