@@ -75,6 +75,11 @@ div.navbar a {
     text-align: center;
 }
 
+div.navbar a:visited {
+    color: #ffffff;
+    background-color: #5ba3d9;
+}
+
 div.navbar a:hover {
     background-color: #3a8abf;
 }
